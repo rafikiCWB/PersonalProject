@@ -27,6 +27,7 @@ public class HelloWorldView extends HorizontalLayout {
     private TextField email;
     private TextField telefone;
     private Button sayHello;
+    private Button deleteLastEntry;
 
     @Autowired
     private UserController userController;
@@ -64,11 +65,22 @@ public class HelloWorldView extends HorizontalLayout {
             userDataGrid.setItems(userDataList);
         });
         sayHello.addClickShortcut(Key.ENTER);
+        //delete
+        deleteLastEntry = new Button("Delete Last Entry");
+        deleteLastEntry.addClickListener(e -> {
+            if(!userDataList.isEmpty()) {
+                userDataList.remove(userDataList.size() - 1);
+                userDataGrid.setItems(userDataList);
+                Notification.show("Last entry deleted");
+            } else {
+                Notification.show("No entries to delete");
+            }
+        });
 
         setMargin(true);
-        setVerticalComponentAlignment(Alignment.END, name, email, telefone, sayHello);
+        setVerticalComponentAlignment(Alignment.END, name, email, telefone, sayHello, deleteLastEntry);
 
-        add(name, email, telefone, sayHello,userDataGrid);
+        add(name, email, telefone, sayHello,deleteLastEntry, userDataGrid);
     }
 
 }
