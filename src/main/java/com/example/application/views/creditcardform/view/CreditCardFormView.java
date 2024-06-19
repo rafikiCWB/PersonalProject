@@ -1,4 +1,4 @@
-package com.example.application.views.creditcardform;
+package com.example.application.views.creditcardform.view;
 
 import com.example.application.views.MainLayout;
 import com.vaadin.flow.component.Component;

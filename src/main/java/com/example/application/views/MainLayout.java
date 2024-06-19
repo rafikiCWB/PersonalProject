@@ -2,8 +2,8 @@ package com.example.application.views;
 
 import com.example.application.views.addressform.AddressFormView;
 import com.example.application.views.checkoutform.CheckoutFormView;
-import com.example.application.views.creditcardform.CreditCardFormView;
-import com.example.application.views.helloworld.HelloWorldView;
+import com.example.application.views.creditcardform.view.CreditCardFormView;
+import com.example.application.views.helloworld.view.HelloWorldView;
 import com.example.application.views.imagegallery.ImageGalleryView;
 import com.vaadin.flow.component.applayout.AppLayout;
 import com.vaadin.flow.component.applayout.DrawerToggle;
