@@ -1,28 +1,17 @@
 # My App
 
 Aplicação criada com...
-Liguagem de programação Java
-Framework Vaadin
-Spring web, spring jpa, spring devtools
-flyway
-banco de teste h2
-banco de dev postgres
+
+- Liguagem de programação Java
+- Framework Vaadin
+- Spring web, spring jpa, spring devtools
+- Flyway migration/versionamente do Database
+- Database teste -H2
+- Database dev   -PostgreSQL
 
 ## Running the application
  -  mvnw(Windows)
  - ./mvnw(Mac & Linux)
-
-
-
-## Deploying to Production
-
-To create a production build, call `mvnw clean package -Pproduction` (Windows),
-or `./mvnw clean package -Pproduction` (Mac & Linux).
-This will build a JAR file with all the dependencies and front-end resources,
-ready to be deployed. The file can be found in the `target` folder after the build completes.
-
-Once the JAR file is built, you can run it using
-`java -jar target/my-app-1.0-SNAPSHOT.jar`
 
 ## Project structure
 
